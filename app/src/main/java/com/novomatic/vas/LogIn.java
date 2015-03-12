@@ -48,8 +48,15 @@ public class LogIn extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (new StoreManager().DataExists(this) == true){
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+
         setContentView(R.layout.activity_log_in);
 
+        //Toast.makeText(this, "File: " + new StoreManager().DataExists(this),Toast.LENGTH_LONG).show();
 
         editText_userName = (EditText) findViewById(R.id.editText_name);
         editText_password = (EditText) findViewById(R.id.editText_password);
@@ -61,6 +68,7 @@ public class LogIn extends Activity {
         model = Build.MODEL;
 
         Login_act = this;
+
 
 
     }

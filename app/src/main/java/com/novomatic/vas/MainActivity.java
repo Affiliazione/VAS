@@ -67,7 +67,10 @@ public class MainActivity extends Activity
                         .commit();
                 break;
             case 2:
-                Toast.makeText(this,"Exit",Toast.LENGTH_LONG).show();
+                StoreManager storeManager = new StoreManager();
+                storeManager.DeleteData(this);
+                Intent intent = new Intent(this, LogIn.class);
+                startActivity(intent);
                 break;
 
         }

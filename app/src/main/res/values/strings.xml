@@ -3,7 +3,7 @@
 
     <string name="title_section1">Home</string>
     <string name="title_section2">Punti vendita</string>
-    <string name="title_section3">Esci</string>
+    <string name="title_section3">Log Out</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -24,8 +24,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_log_in">LogIn</string>
     <string name="title_activity_prospect_detatil">ProspectDetatil</string>
-
-
 
 
 

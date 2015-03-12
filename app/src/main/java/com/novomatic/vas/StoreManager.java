@@ -61,9 +61,29 @@ public class StoreManager {
         try {
             File dir = context.getFilesDir();
             File file = new File(dir, FILENAME);
+            file.delete();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+    }
+
+    public boolean DataExists (Context context){
+
+        boolean result = false;
+
+        try {
+
+            File dir = context.getFilesDir();
+            File file = new File(dir, FILENAME);
+            result = file.exists();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return  result;
 
     }
 
