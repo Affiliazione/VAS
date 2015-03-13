@@ -1,9 +1,11 @@
 package com.novomatic.vas;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class ProspectDetatil extends Activity {
@@ -12,6 +14,18 @@ public class ProspectDetatil extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prospect_detatil);
+
+        Intent intent = getIntent();
+        int prospect_id = intent.getIntExtra("prospect_id",0);
+
+        StoreManager storeManager = new StoreManager();
+
+        Prospect prospect = new ParseResponseWebAPI
+                (storeManager.GetData(this)).GetProspectById(prospect_id);
+
+        TextView denominazione = (TextView) findViewById(R.id.textView_profile_name);
+
+        denominazione.setText(prospect.getDenominazione());
     }
 
 

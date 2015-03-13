@@ -4,7 +4,7 @@
     android:stretchColumns="1"
     >
 
-    <TableRow>
+    <TableRow android:background="@drawable/border_line">
 
         <TextView
             android:text="cel1"

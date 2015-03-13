@@ -115,7 +115,7 @@ public class NavigationDrawerFragment extends Fragment {
 
         MenuItemDef menuItemExit = new MenuItemDef();
         menuItemExit.setName("Logout");
-        menuItemExit.setIcon(R.drawable.ic_shopping);
+        menuItemExit.setIcon(R.drawable.ic_logout);
         menuItemDef.add(menuItemExit);
 
         MenuArrayAdapter menuArrayAdapter = new MenuArrayAdapter(getActivity(), menuItemDef);

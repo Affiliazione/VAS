@@ -82,7 +82,19 @@ public class ParseResponseWebAPI {
         return profile;
     }
 
+    public Prospect GetProspectById(int id){
 
+        Prospect prospect = new Prospect();
+
+        for (Prospect item : prospectsList){
+            if (item.getProspectID() == id){
+                prospect = item;
+            }
+        }
+
+        return prospect;
+
+    }
 
 
 

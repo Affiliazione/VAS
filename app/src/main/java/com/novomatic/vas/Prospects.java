@@ -62,11 +62,12 @@ public class Prospects extends Fragment implements View.OnClickListener {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
 
+
                 TextView firstLane = (TextView) view.findViewById(R.id.firstLine);
 
                 //Toast.makeText(view.getContext(), firstLane.getText(), Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(rootView.getContext(), ProspectDetatil.class);
-
+                intent.putExtra("prospect_id",(int) firstLane.getTag());
                 startActivity(intent);
 
             }

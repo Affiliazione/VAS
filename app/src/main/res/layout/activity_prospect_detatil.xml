@@ -6,10 +6,58 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.novomatic.vas.ProspectDetatil">
 
-    <TextView android:text="Dettaglio" android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/title_frame_layout"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView_profile_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Denominazione"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/content_frame_layout"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="132dp" />
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView_profile_ind"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="indirizzo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView_profile_tel"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="indirizzo"
+            />
+
+
+    </RelativeLayout>
 
 </RelativeLayout>

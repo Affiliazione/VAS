@@ -36,6 +36,7 @@ public class ProspectArrayAdapter extends ArrayAdapter<Prospect> {
 
         firstLine.setText(values[position].getDenominazione());
         secondLine.setText(values[position].getIndirizzo());
+        firstLine.setTag(values[position].getProspectID());
 
         int contratti = values[position].getContratti();
 
