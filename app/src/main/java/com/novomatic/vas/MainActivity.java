@@ -69,8 +69,8 @@ public class MainActivity extends Activity
             case 2:
                 StoreManager storeManager = new StoreManager();
                 storeManager.DeleteData(this);
-                Intent intent = new Intent(this, LogIn.class);
-                startActivity(intent);
+                this.finish();
+                System.exit(0);
                 break;
 
         }
