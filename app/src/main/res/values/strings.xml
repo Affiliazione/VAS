@@ -19,11 +19,11 @@
     <color name="btn_text_color">#000</color>
     <color name="bar_background">#5B85E5</color>
 
-
     <string name="title_activity_home">Home</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_log_in">LogIn</string>
-    <string name="title_activity_prospect_detatil">ProspectDetatil</string>
+    <string name="title_activity_log_in">Le tue credenziali</string>
+    <string name="title_activity_prospect_detatil">Dettaglio</string>
+    <string name="title_activity_prospect_edit">Modifica</string>
 
 
 

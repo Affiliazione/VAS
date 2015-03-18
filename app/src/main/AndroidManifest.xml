@@ -32,6 +32,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.novomatic.vas.MainActivity" />
         </activity>
+        <activity
+            android:name=".ProspectEdit"
+            android:label="@string/title_activity_prospect_edit"
+            android:parentActivityName=".ProspectDetatil" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.novomatic.vas.ProspectDetatil" />
+        </activity>
     </application>
 
 </manifest>

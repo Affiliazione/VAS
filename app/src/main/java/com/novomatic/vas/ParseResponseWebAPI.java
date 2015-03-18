@@ -62,7 +62,11 @@ public class ParseResponseWebAPI {
                 prospect.setComune(jsonProspect.getString("Comune"));
                 prospect.setTelefono(jsonProspect.getString("Telefono"));
                 prospect.setnCivico(jsonProspect.getString("NCivico"));
-                prospect.setIndirizzo(jsonProspect.getString("indirizzo"));
+
+                JSONObject indirizzoInserito = jsonProspect.getJSONObject("indirizzo_inserito");
+
+                prospect.setIndirizzo(indirizzoInserito.getString("Via"));
+                prospect.setIndirizzo_id(Integer.parseInt(indirizzoInserito.getString("indirizzo_id")));
 
                 if (profile.getIntermediarioId() == prospect.getIntermediario_id()) {
                     prospectsList.add(prospect);

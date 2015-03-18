@@ -52,10 +52,12 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/textView_profile_tel"
-            android:layout_alignParentTop="true"
+            android:layout_below="@+id/textView_profile_ind"
             android:layout_centerHorizontal="true"
-            android:text="indirizzo"
+            android:text="telefono"
             />
+
+
 
 
     </RelativeLayout>
